@@ -1,0 +1,230 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(133, 0, 0);
+    font-family: "Pacifico", cursive;
+    width: 100%;
+    height: 100%;
+}
+#text{
+
+    color: aliceblue;
+    text-shadow: 0px 0px 10px rgb(0, 0, 0);
+    z-index: 1000;
+
+}
+.Container{
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+transform: translate(-50%, -50%);
+
+}
+
+.contenedor {
+    position: relative;
+}
+
+.size{
+    width: 4% !important;
+
+    
+}
+
+.size2{
+
+width: 100%;
+max-width: 6rem;
+display: none;
+
+}
+
+.Garlands{
+    height: 8rem;
+    width: 100%;
+    transform: translateX(130px) translateY(195px)  rotate(13deg);
+    max-width: 7.1rem;
+    display: none;
+    
+}
+.Garlands-Reverse{
+    transform: scaleX(-1) translateX(-130px) translateY(195px) rotate(13deg);
+    width: 100%;
+    height: 8rem;
+margin: 0;
+max-width: 7.1rem;
+ display: none;
+}
+
+.contenedor img{
+    animation:animate 15s linear infinite;
+    animation-duration: calc(125s / var(--i));
+z-index: 0;
+
+}
+
+@keyframes animate{
+0%{
+transform: translateY(135vh) scale(0);
+}
+100%{
+    transform: translateY(-10vh) scale(1);
+}
+}
+.Section-Main{
+ 
+ margin: 5rem 8rem;
+ padding: 4rem 0;
+ border: 10px solid white;
+ border-radius: 2rem ;
+
+
+}
+.Flex-Content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse !important;
+    align-items: center;
+    flex-wrap: wrap !important;
+                      
+}
+.Flex-Text{
+    padding: 0 5rem;
+    text-align: center;
+}
+.Text-Low{
+    font-family: cursive;
+    color: rgb(228, 228, 228);
+text-transform: uppercase;
+text-align: end;
+padding: 3rem 0;
+}
+.Image-Flower{
+    transform: scaleX(-1); 
+  
+}
+.Styles-TITTLE{
+    text-align: center;
+    color: rgb(229, 155, 233);
+    
+}
+.heart {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    margin: 0 auto;
+filter: drop-shadow(0px 0px 50px red);
+  }
+  
+  .heart::before,
+  .heart::after {
+    position: absolute;
+  margin: 2rem 0;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background-color: red;
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+    filter: drop-shadow(0px 0px 50px red);
+  }
+  
+  .heart::after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
+.Text-Description{
+    margin: 3rem 0;
+    color: rgb(255, 118, 118);
+    font-family: cursive;
+    text-align: center;
+
+}
+
+@media (max-width : 900px) and (min-width : 300px) { 
+
+    #text{
+font-size: 1.3rem;
+        color: rgb(159, 210, 255);
+        text-shadow: 0px 0px 10px rgb(0, 0, 0);
+        z-index: 1000;
+    
+    }
+    .Image-Flower{
+        transform: scaleX(-1); 
+    
+        width: 100%;
+        height: 100%;
+    max-width: 350px;
+    max-height: 400px;
+    }
+
+    .Garlands{
+
+    display: none;
+}
+.Garlands-Reverse{
+
+ display: none;
+}
+.Section-Main{
+    margin: 0 0 !important;
+    padding: 4rem 0;
+    border: 10px solid white;
+    border-radius: 2rem;
+    width: 100% !important;
+   }
+   
+}
+
+.Flex-Content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.Styles-TITTLE{
+color: rgb(229, 155, 233);
+font-size: 1.2rem;    
+}
+.size{
+width: 2%;
+}
+
+.Flex-Text{
+    padding: 0 0 ;
+}
+@media (max-width : 1024px) and (min-width : 768px) {
+
+    .Flex-Content{
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse ;
+        align-items: center;
+        flex-wrap: wrap;
+    
+    }
+        .Section-Main{
+ 
+        margin: 6rem 0 !important;
+        padding: 4rem 0;
+        border: 10px solid white;
+        border-radius: 2rem;
+        width: 100% !important;
+       }
+}
+
+
+  
